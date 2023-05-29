@@ -24,6 +24,7 @@ function welcome() {
 }
 
 function getLoanAmount() {
+  prompt('-----------------------------------');
   prompt('What is the loan amount?');
   loanAmount = readline.question();
 
