@@ -19,7 +19,7 @@ function getPlayerChoice() {
 
   while (!VALID_INPUT.includes(choice)) {
     prompt("Please enter: r, p, s, k, or l");
-    choice = readline.question();
+    choice = readline.question().toLowerCase();
   }
 
   return VALID_CHOICES[VALID_INPUT.indexOf(choice)];
