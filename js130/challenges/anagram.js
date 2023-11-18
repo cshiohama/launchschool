@@ -1,7 +1,7 @@
 class Anagram{
-  constructor(anagram) {
-    this.anagram = anagram;
-    this.sorted = anagram.toLowerCase().split('').sort().join('');
+  constructor(word) {
+    this.word = word;
+    this.sorted = word.toLowerCase().split('').sort().join('');
   }
   
   match(arr) {
@@ -13,11 +13,13 @@ class Anagram{
       return true;
     }
     
-    let result = [this.anagram];
+    let result = [this.word];
+    let sorted;
+    
     arr.forEach(word => {
-      if (word.toLowerCase().split('').sort().join('') === this.sorted)
-        if (notDuplicate(word))
-          result.push(word);
+      sorted = word.toLowerCase().split('').sort().join('');
+      if (this.sorted === sorted && notDuplicate(word))
+        result.push(word);
     });
     
     result.shift();
