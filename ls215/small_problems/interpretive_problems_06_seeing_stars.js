@@ -50,7 +50,6 @@ ALGORITHM
 - cols variable = arr[0].length
 - center variable = (n - 1) / 2
 
-
 - iterate veritcal 
 - iterate horizontal
 - iterate ul diag

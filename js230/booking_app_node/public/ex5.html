@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercise 5</title>
+    <style>
+     .grey {
+      background-color: grey;
+     }
+
+     input[type="text"] {
+      margin-top: 3px;
+     }
+     
+     input[type="button"] {
+      margin-top: 3px;
+     }
+    </style>
+    <script src="ex5.js"></script>
+  </head>
+
+  <body>
+    <h1>Schedules</h1>
+    <form name = "scheduleForm" id="scheduleForm">
+      <p>Please select one schedule <select name="schedules" id="schedules"></select></p>
+      <label for="email">Email: </label>
+      <input type="text" name="email" id="email" required><br>
+      <input type="button" value="submit" id="scheduleFormSubmit">
+    </form>
+
+    <br>
+    <input type="button" value="show hidden elements" id="toggle">
+
+    <div id="newstudent" hidden class="grey">
+      <h1> Please provide new student details</h1>
+      <form id="newstudentForm">
+        <label for="newEmail">Email: </label>
+        <input type="text" name="newEmail" id="newEmail"><br>
+        <label for="newName">Name: </label>
+        <input type="text" name="newName" id="newName"><br>
+        <label for="bookingSequence">Booking Sequence: </label>
+        <input type="text" name="bookingSequence" id="bookingSequence"><br>
+        <input type="button" value="submit" id="bookingSubmit">
+      </form>
+    </div>
+  </body>
+</html>

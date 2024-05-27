@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 4</title>
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <script src="ex4.js"></script>
+</head>
+<body>
+  <button id="btnAdd">Add more schedules</button>
+  <form action="api/schedules" method="post">
+    <div id="schedule">
+        <fieldset> 
+          <legend>Schedule 1</legend>
+          <label for="staff_id">Staff Name: </label>
+          <select name="staff_id"> </select><br><br>
+          <label for="date">Date: </label>
+          <input type="text" name="date" placeholder="mm-dd-yy"><br><br>
+          <label for="time">Time: </label>
+          <input type="text" name="time" placeholder="hh:mm">
+        </fieldset>
+    </div>
+
+    <button id="submit">Submit</button>
+  </form>
+
+</body>

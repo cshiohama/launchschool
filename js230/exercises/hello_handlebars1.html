@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="hello_handlebars1.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello Handlebars</h1>
+    <div id="anchor"></div>
+  
+    <script id="template" type="text/x-handlebars-template">
+      <article>
+        <h1>{{title}}</h1>
+        <p><time>Posted on {{published}}</time></p>
+        {{body}}
+      </article>
+    </script>
+
+  </body>
+</html>
